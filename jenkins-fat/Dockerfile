@@ -31,7 +31,7 @@ RUN add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubunt
 #------------ Docker Compose
 #--------------------------------------------
 RUN curl -o /usr/bin/docker-compose -L \
-    "https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m)" \
+    "https://get.daocloud.io/docker/compose/releases/download/1.23.2/docker-compose-`uname -s`-`uname -m`" \
     && chmod +x /usr/bin/docker-compose
 
 #--------------------------------------------
